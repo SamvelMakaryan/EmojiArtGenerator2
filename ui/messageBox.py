@@ -13,8 +13,6 @@ class ResizableMessageBox(QMessageBox):
 		super().resizeEvent(event)
 
 def show_normal_message(message):
-	app = QApplication(sys.argv)
-
 	msg_box = ResizableMessageBox()
 	msg_box.setIcon(QMessageBox.Information)
 	msg_box.setWindowTitle("    ")
@@ -40,8 +38,6 @@ def show_normal_message(message):
 	msg_box.exec_()
 
 def show_error_message(title, message):
-	app = QApplication(sys.argv)
-    
 	msg_box = ResizableMessageBox()
 	msg_box.setWindowTitle(title)
 	msg_box.setText(message)
