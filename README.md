@@ -29,4 +29,14 @@ For some images color channels that are incompatible for generation you will get
 
 ### Example
 
+#### Original Image
 
+![eagle](https://github.com/SamvelMakaryan/EmojiArtGenerator2/assets/123547362/1f5a3383-8910-4056-8519-e0ad8311880f)
+
+#### Emoji Image
+
+![rage](https://github.com/SamvelMakaryan/EmojiArtGenerator2/assets/123547362/3df7d79f-e2db-4599-b4e8-f2b74db72c8e)
+
+#### Result Image
+
+![Screenshot from 2023-08-10 16-40-48](https://github.com/SamvelMakaryan/EmojiArtGenerator2/assets/123547362/844193ca-7757-4f66-9991-ac356de2306b)
