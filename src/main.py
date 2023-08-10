@@ -145,7 +145,7 @@ class MyDialog(QDialog):
 def run_ui():
 	app = QApplication(sys.argv)
 	dialog = MyDialog()
-	dialog.setWindowTitle("Dialog")
+	dialog.setWindowTitle("EmojiArtGenerator")
 	
 	dialog.show()
 	sys.exit(app.exec_())
