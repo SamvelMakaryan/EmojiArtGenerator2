@@ -49,7 +49,7 @@ class MyDialog(QDialog):
 		if dest_file_path:
 			try:
 				os.rename(self.cout, dest_file_path)
-				print(f"File moved successfully to: {destination_path}")
+				print(f"File moved successfully to: {dest_file_path}")
 			except Exception as e:
 				print(f"Failed to move file. Error: {e}")
 		else:
@@ -64,7 +64,7 @@ class MyDialog(QDialog):
 		if self.emoji_path is None:
 			show_error_message("Empty emoji", "Please browse emoji")
 			return
-		self.cout, cerr = run_cpp(self.image_path, self.emoji_path)
+		self.cout, cerr = run_cpp(self.image_path, self.emoji_path, self.pixel_size.value())
 		if cerr is not None:
 			show_error_message("Unconvertable image", "Unable to convert image")
 			return
@@ -90,7 +90,7 @@ class MyDialog(QDialog):
 	def show_image(self, location, image_path):
 		if image_path:
 			pixmap = QPixmap(image_path)
-			location.setPixmap(pixmap.scaled(550, 630))
+			location.setPixmap(pixmap.scaled(550, 500))
 
 	def dowload_image_and_emoji(self):
 		image_url = self.image_description.text()

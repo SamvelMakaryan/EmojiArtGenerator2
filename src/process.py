@@ -1,8 +1,8 @@
 import subprocess
 
-def run_cpp(image_path, emoji_path):
+def run_cpp(image_path, emoji_path, size):
 	binary_path = './build/EmojiArt'  
-	command_line_arguments = [image_path, emoji_path, '7']  
+	command_line_arguments = [image_path, emoji_path, str(size)]  
 	cout = None
 	cerr = None	
 	try:
